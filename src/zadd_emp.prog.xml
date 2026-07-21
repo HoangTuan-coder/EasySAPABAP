@@ -4,9 +4,11 @@
   <asx:values>
    <PROGDIR>
     <NAME>ZADD_EMP</NAME>
+    <DBAPL>S</DBAPL>
     <SUBC>1</SUBC>
-    <RLOAD>E</RLOAD>
+    <APPL>X</APPL>
     <FIXPT>X</FIXPT>
+    <LDBNAME>D$S</LDBNAME>
     <UCCHECK>X</UCCHECK>
    </PROGDIR>
    <TPOOL>
