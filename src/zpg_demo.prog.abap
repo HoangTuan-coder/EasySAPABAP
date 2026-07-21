@@ -49,3 +49,4 @@ START-OF-SELECTION.
 DATA(lo_flight) = NEW lcl_flight( ).
 lo_flight->get_data( ).
 lo_flight->display_data( ).
+WRITE: 'Test update commit git'.
