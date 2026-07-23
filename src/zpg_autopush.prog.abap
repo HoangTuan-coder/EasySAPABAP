@@ -63,3 +63,4 @@ START-OF-SELECTION.
   o_salesord->build_salesorder( ).
 
   o_salesord->disp_salesorder( ).
+  WRITE: 'Test auto push.'.
