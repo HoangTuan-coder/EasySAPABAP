@@ -4,14 +4,6 @@ class ZCX_ABAPGIT_EXCEPTION definition
   create public .
 
 public section.
-
-  interfaces IF_T100_MESSAGE .
-  interfaces IF_T100_DYN_MSG .
-
-  methods CONSTRUCTOR
-    importing
-      !TEXTID like IF_T100_MESSAGE=>T100KEY optional
-      !PREVIOUS like PREVIOUS optional .
 protected section.
 private section.
 ENDCLASS.
@@ -19,18 +11,4 @@ ENDCLASS.
 
 
 CLASS ZCX_ABAPGIT_EXCEPTION IMPLEMENTATION.
-
-
-  method CONSTRUCTOR.
-CALL METHOD SUPER->CONSTRUCTOR
-EXPORTING
-PREVIOUS = PREVIOUS
-.
-clear me->textid.
-if textid is initial.
-  IF_T100_MESSAGE~T100KEY = IF_T100_MESSAGE=>DEFAULT_TEXTID.
-else.
-  IF_T100_MESSAGE~T100KEY = TEXTID.
-endif.
-  endmethod.
 ENDCLASS.
